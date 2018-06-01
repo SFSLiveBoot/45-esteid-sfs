@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Setup esteid pkcs#11
-Terminal=false
-Exec=/opt/bin/setup-user-esteid-pkcs11.sh
-X-GNOME-Autostart-enabled=true

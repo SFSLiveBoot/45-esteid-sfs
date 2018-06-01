@@ -1,0 +1,11 @@
+--- qdigidoc-3.13.6.1525-1710.orig/debian/control	2018-03-21 09:39:20.000000000 +0000
++++ qdigidoc-3.13.6.1525-1710/debian/control	2018-05-31 15:19:54.135240834 +0000
+@@ -8,7 +8,7 @@
+  libdigidocpp-dev (>=3.0),
+  libldap2-dev,
+  libpcsclite-dev,
+- libssl-dev,
++ libssl-dev|libssl1.0-dev,
+  qtbase5-dev,
+  qttools5-dev,
+  qttools5-dev-tools

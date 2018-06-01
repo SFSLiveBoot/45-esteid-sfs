@@ -1,0 +1,8 @@
+qtbase5-dev libpcsclite-dev
+cdbs
+cmake
+zlib1g-dev
+libssl1.0-dev
+libxml-security-c-dev xsdcxx doxygen
+libldap2-dev qttools5-dev qttools5-dev-tools
+libzip-dev

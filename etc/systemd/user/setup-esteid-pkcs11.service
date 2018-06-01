@@ -1,0 +1,4 @@
+[Service]
+ExecStart=/opt/bin/setup-user-esteid-pkcs11.sh
+Type=oneshot
+RemainAfterExit=true

@@ -1,0 +1,11 @@
+--- open-eid-18.3.0.1783-1710.orig/debian/control	2018-03-27 18:08:17.000000000 +0000
++++ open-eid-18.3.0.1783-1710/debian/control	2018-05-31 16:31:30.053964198 +0000
+@@ -21,7 +21,7 @@
+  libdigidocpp-tools,
+  qdigidoc,
+  qesteidutil,
+- qdigidoc-tera,
++ qdigidoc-tera|qestidutil-tera,
+  ${misc:Depends}
+ Description: This is eID Software metapackage
+  This package does not contain anything itself, it's a metapackage that will
