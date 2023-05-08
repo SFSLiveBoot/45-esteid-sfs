@@ -9,7 +9,7 @@ set -e
 : "${ria_repo:=https://installer.id.ee/media/ubuntu/}"
 : "${apt_list:=/etc/apt/sources.list.d/ria-repository.list}"
 : "${inst_dist:=focal}"
-: "${install_pkgs:=open-eid}"
+: "${install_pkgs:=open-eid web-eid web-eid-chrome web-eid-firefox}"
 
 
 RIA_KEY="""-----BEGIN PGP PUBLIC KEY BLOCK-----
