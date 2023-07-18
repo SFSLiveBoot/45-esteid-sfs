@@ -8,7 +8,7 @@ set -e
 : "${ria_apt_key:=/usr/share/keyrings/ria-repository.gpg}"
 : "${ria_repo:=https://installer.id.ee/media/ubuntu/}"
 : "${apt_list:=/etc/apt/sources.list.d/ria-repository.list}"
-: "${inst_dist:=focal}"
+: "${inst_dist:=jammy}"
 : "${install_pkgs:=open-eid web-eid web-eid-chrome web-eid-firefox}"
 
 
