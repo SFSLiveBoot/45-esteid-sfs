@@ -11,6 +11,14 @@ set -e
 : "${inst_dist:=jammy}"
 : "${install_pkgs:=open-eid web-eid web-eid-chrome web-eid-firefox}"
 
+installed_ver() {
+  awk '/^Version/{print $2}' "$DESTDIR/var/lib/dpkg/info/qdigidoc4.control"
+}
+
+latest_ver() {
+  local pkgs="$(dl_file "${ria_repo}/dists/${inst_dist}/main/binary-amd64/Packages")"
+  awk '/^Package: qdigidoc4$/{pkg=1};/^Version: /{ver=$2};/^$/{if(pkg==1) print ver;pkg=0;ver=""}' "$pkgs"
+}
 
 RIA_KEY="""-----BEGIN PGP PUBLIC KEY BLOCK-----
 Comment: GPGTools - https://gpgtools.org
@@ -65,4 +73,3 @@ K2czbpReKw==
 =aSyh
 -----END PGP PUBLIC KEY BLOCK-----
 """
-

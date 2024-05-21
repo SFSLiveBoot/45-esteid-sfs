@@ -1,0 +1,9 @@
+#!/bin/sh
+
+. "$(dirname "$0")/.common.sh"
+
+: "${installed_ver=$(installed_ver)}"
+: "${latest_ver=$(latest_ver)}"
+
+echo "Installed: $installed_ver Latest: $latest_ver"
+test "$installed_ver" = "$latest_ver"
